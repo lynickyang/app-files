@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-">
+        <li class="text">校門口外側</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-">
+        <li class="text">校門口</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-">
+        <li class="text">穿堂</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-">
+        <li class="text">維也納森林</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-">
+        <li class="text">合作社</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-">
+        <li class="text">操場中央</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-1">
+        <li class="text">1樓平台</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-">
+        <li class="text">半戶外球場</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-2">
+        <li class="text">2樓連接橋下方</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-">
+        <li class="text">垃圾屋</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-1-2">
+        <li class="text">1-2平台</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-2">
+        <li class="text">2樓平台</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-2-3">
+        <li class="text">2-3平台</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-3">
+        <li class="text">3樓平台</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-3-4">
+        <li class="text">3-4平台</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-4">
+        <li class="text">4樓平台</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-">
+        <li class="text">教務處走廊</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-7">
+        <li class="text">7年級走廊右側</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-">
+        <li class="text">七年級走廊右側末端</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-7">
+        <li class="text">7年級走廊左側</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-">
+        <li class="text">七年級走廊左側末端</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-">
+        <li class="text">育樂中心</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-">
+        <li class="text">育樂中心後門</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
